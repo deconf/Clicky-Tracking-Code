@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.x" type="plugin" group="system" method="upgrade">
+	<name>System - Clicky Tracking Code</name>
+	<author>Alin Marcu</author>
+	<creationDate>Jun 2014</creationDate>
+	<copyright>Copyright (C) 2010 deconf.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>https://deconf.com/</authorUrl>
+	<version>1.5</version>
+	<description>	<![CDATA[
+	For help and FAQ go to: <a href="https://deconf.com/clicky-tracking-code-joomla/" target="_blank">Clicky Tracking Code</a>.<br /><br />
+	]]></description>
+	<files>
+		<filename plugin="clickytrackingcode">clickytrackingcode.php</filename>
+		<filename plugin="clickytrackingcode">index.html</filename>
+	</files>
+	<config>
+	  <fields name="params" addfieldpath="/plugins/system">
+	  	<fieldset name="basic">
+		  <field name="spacer0" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;Tracking Settings&lt;/b&gt;&lt;/u&gt;" description="" />
+		  <field name="clicky_id" type="text" default="" label="Site ID" description="Enter your Site ID(XXXXXXXX)"/>
+		  <field name="spacer1" type="spacer" default="" label="&lt;font size='-2'&gt;or register a free account on &lt;a href='https://clicky.com/66508224' target='_blank'&gt;clicky.com&lt;/a&gt;&lt;/font&gt;" description="" />
+		  <field name="clicky_backend" type="list" default="1" label="Track Backend" description="Track backend visits">
+				<option value="1">No</option>
+				<option value="0">Yes</option>
+		  </field>
+		  <field name="clicky_admin" type="list" default="1" label="Track Admins" description="Track logged in admins">
+				<option value="1">No</option>
+				<option value="0">Yes</option>
+		  </field>
+		  <field name="spacer2" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;Premium Features&lt;/b&gt;&lt;/u&gt;" description="" />
+		  <field name="clicky_usernames" type="list" default="0" label="Track Usernames" description="Attach username to a visitor session (Clicky PRO is needed for this feature)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		  </field>
+		  <field name="clicky_emails" type="list" default="0" label="Track Emails" description="Attach an email address to a visitor session (Clicky PRO is needed for this feature)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		  </field>
+		  <field name="spacer3" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;Earn Money&lt;/b&gt;&lt;/u&gt;" description="" />
+		  <field name="clicky_affiliate" type="list" default="1" label="Clicky Affiliate Badge" description="This will enable the affiliate badge">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		  </field>	  
+		  <field name="clicky_affiliate_id" type="text" default="" label="Clicky Affiliate ID" description="Enter your Clicky Affiliate ID(XXXXXXXX)"/>		  
+		</fieldset>		
+	  </fields>
+	</config>		
+</extension>
